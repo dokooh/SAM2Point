@@ -1,5 +1,5 @@
 DATASET="dighole"   # Dataset name
-TYPE="segment"          # Prompt type - please choose from {'point', 'box', 'mask'}
+TYPE="mask"          # Prompt type - please choose from {'point', 'box', 'mask'}
 SAMPLE_IDX=0          # Sample ID of the given 3D examples
 PROMPT_IDX=0          # Prompt ID of the given prompt examples
 
