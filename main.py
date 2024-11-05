@@ -20,7 +20,7 @@ if torch.cuda.get_device_properties(0).major >= 8:
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', choices=['S3DIS', 'ScanNet', 'Objaverse', 'KITTI', 'Semantic3D', 'dighole'], default='dighole', help='dataset selected')
+    parser.add_argument('--dataset', choices=['S3DIS', 'ScanNet', 'Objaverse', 'KITTI', 'Semantic3D', 'digsite'], default='digsite', help='dataset selected')
     parser.add_argument('--prompt_type', choices=['point', 'box'], default='point', help='prompt type selected. Mask prompt will be supported soon...')
     parser.add_argument('--sample_idx', type=int, default=0, help='the index of the scene or object')
     parser.add_argument('--prompt_idx', type=int, default=0, help='the index of the prompt')    
