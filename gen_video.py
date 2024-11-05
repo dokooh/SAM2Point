@@ -9,7 +9,7 @@ def extract_number(filename):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', choices=['S3DIS', 'ScanNet', 'Objaverse', 'KITTI', 'Semantic3D', 'dighole'], default='dighole', help='dataset selected')
+    parser.add_argument('--dataset', choices=['S3DIS', 'ScanNet', 'Objaverse', 'KITTI', 'Semantic3D', 'dighole'], default='digsite', help='dataset selected')
     parser.add_argument('--prompt_type', choices=['point', 'box', 'mask'], default='point', help='prompt type selected')
     parser.add_argument('--sample_idx', type=int, default=0, help='the index of the scene or object')
     parser.add_argument('--prompt_idx', type=int, default=0, help='the index of the prompt')    
