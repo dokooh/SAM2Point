@@ -13,7 +13,7 @@ sample_2 = {'path': 'data/digsite/Dig_Video_0067_point_cloud - SOR filtered.ply.
 }
 
 
-digsite_samples = [sample_1, sample_2]v
+digsite_samples = [sample_1, sample_2]
 
 sample_2 = {'path': 'data/S3DIS/Area_1_conferenceRoom_1.txt',
            'point_prompts': [[0.01049672, 0.47400134, 0.51851852], [0.79906279, 0.88886409, 0.23477715], [0.62417994, 0.79825932, 0.01349655],
