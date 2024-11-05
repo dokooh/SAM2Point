@@ -85,3 +85,30 @@ def load_Semantic3D_sample(data_path, id, sample=False):
     point = point / pmax
     
     return point, color
+
+def load_digsite_sample(data_path, id, sample=False):
+    print("Loading point cloud from ", data_path)
+    all_data = np.load(data_path)
+    
+    point = all_data[:, :3]
+    color = all_data[:, 3:6]
+    
+    pmin = point.min(axis=0)
+    point = point - pmin
+    pmax = point.max(axis=0)
+    point = point / pmax
+
+    if id > 1:  return point, color
+    if id == 0:
+        filter_mask = (point[:, 0] > 0.4) & (point[:, 1] > 0.4) & (point[:, 2] < 0.4)
+    else:
+        filter_mask = (point[:, 0] > 0.4) & (point[:, 1] < 0.5)
+    point = point[filter_mask]
+    color = color[filter_mask]
+
+    pmin = point.min(axis=0)
+    point = point - pmin
+    pmax = point.max(axis=0)
+    point = point / pmax
+    
+    return point, colorv
