@@ -51,7 +51,7 @@ def main():
         args.voxel_size = info[configs.VOXEL[args.prompt_type]][args.prompt_idx] 
         args.mode, args.theta = 'nearest', 0.5
     elif args.dataset == 'digsite':
-        info = configs.digsite_samples[args.sample_idx]
+        info = configs.Digsite_samples[args.sample_idx]
         point, color = dataset.load_digsite_sample(info['path'], args.sample_idx)
         args.voxel_size = info[configs.VOXEL[args.prompt_type]][args.prompt_idx] 
         args.mode, args.theta = 'nearest', 0.5
