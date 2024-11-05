@@ -1,11 +1,11 @@
 
-sample_1 = {'path': 'data/digsite/point_cloud - Cloud ply.npy',
+sample_1 = {'path': 'data/digsite/digvideo.npy',
            'point_prompts': [[0.57825595, 0.5005686,  0.11494722], [0.7136412,  0.49501216, 0.5020814 ], [0.7136412,  0.49501216, 0.5020814 ]],
            'voxel_size': [0.055, 0.045, 0.05],
            'box_prompts': [[0., 0.17, -0.01, 0.72, 0.80, 0.3], [-0.01, 0., 0.28, 0.8, 1, 0.82], [-0.01, 0.28, 0.89, 1, 0.72, 1.02]],
            'voxel_size_box': [0.055, 0.045, 0.055],
 }
-sample_2 = {'path': 'data/digsite/Dig_Video_0067_point_cloud - SOR filtered.ply.npy',
+sample_2 = {'path': 'data/digsite/fullsite.npy',
            'point_prompts': [[0.6513301, 0.6753892, 0.52316076], [0.21359734, 0.6097132 , 0.7939796 ], [0.44947368, 0.21654338, 0.58450174]], 
            'voxel_size': [0.04, 0.05, 0.05], 
            'box_prompts': [[0.61, 0.4, 0.35, 0.8, 0.8, 0.6], [0.42, -0.02, -0.02, 1.02, 0.4, 1]],  
